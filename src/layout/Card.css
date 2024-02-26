@@ -1,0 +1,53 @@
+.card {
+    padding: 2em;
+}
+
+.card--image {
+    border-radius: 9px;
+    max-height: 235px;
+    position: relative;
+}
+
+.card--image-banner {
+    text-transform: uppercase;
+    background-color: #FFF;
+    border-radius: 2px;
+    position: absolute;
+    left: 40px;
+    bottom: 169px;
+    font-size: 0.625rem;
+    padding: 0.3em 0.6em;
+}
+
+.card--rating-section {
+    display: flex;
+    align-items: center;
+}
+
+.card--icon {
+    max-width: 14px;
+    margin-right: 4px;
+}
+
+.card--text,
+.card--text-grey {
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.card--text-grey {
+    color: #918E9B;
+    margin-left: 0.25em;
+}
+
+.card--description {
+    margin: 0.4em 0;
+}
+
+.card--text-bold {
+    font-weight: 700;
+}
+
+.card--text-regular {
+    font-weight: 400;
+}
