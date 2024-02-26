@@ -5,4 +5,5 @@
 
 .navbar--logo {
     height: 25px;
+    max-width: 100px;
 }
