@@ -35,6 +35,10 @@
     margin: 0;
 }
 
+.card--text {
+    font-weight: 400;
+}
+
 .card--text-grey {
     color: #918E9B;
     margin-left: 0.25em;

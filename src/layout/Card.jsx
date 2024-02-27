@@ -21,7 +21,7 @@ const Card = () => {
         <p className="card--text-grey">USA</p>
       </div>
       <div className="card--description">
-        <p className="card--text">Life lessons with Katie Zafares</p>
+        <h2 className="card--text">Life lessons with Katie Zafares</h2>
       </div>
       <div className="card--price">
         <p className="card--text card--text-bold">
