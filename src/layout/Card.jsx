@@ -3,8 +3,8 @@ import './Card.css';
 const Card = (props) => {
   return (
     <div className="card">
-      <img className="card--image" src={props.img} alt={props.alt} />
-      <span class="card--image-banner">Sold out</span>
+      <img className="card--image" src={props.coverImg} alt={props.altText} />
+      <span className="card--image-banner">Sold out</span>
       <div className="card--rating-section">
         <img
           className="card--icon"
@@ -14,7 +14,7 @@ const Card = (props) => {
         <p className="card--text">{props.rating}</p>
         <p className="card--text-grey">({props.reviewCount})</p>
         <p className="card--text-grey">•</p>
-        <p className="card--text-grey">{props.country}</p>
+        <p className="card--text-grey">{props.location}</p>
       </div>
       <div className="card--description">
         <h2 className="card--text">{props.title}</h2>
