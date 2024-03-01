@@ -1,31 +1,15 @@
 import './App.css';
 import Header from './layout/Header';
-import Card from './layout/Card';
 import data from './data/data';
+import Main from './layout/Main';
 
-function App() {
-  console.log(data);
-  const cards = data.map((item, index) => {
-    return (
-      <Card
-        key={index}
-        coverImg={item.coverImg}
-        altText={item.altText}
-        rating={item.stats.rating}
-        reviewCount={item.stats.reviewCount}
-        location={item.location}
-        title={item.title}
-        price={item.price}
-      />
-    );
-  });
-
+const App = () => {
   return (
     <>
       <Header />
-      {cards}
+      <Main />
     </>
   );
-}
+};
 
 export default App;
