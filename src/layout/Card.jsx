@@ -1,10 +1,17 @@
 import './Card.css';
 
 const Card = (props) => {
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = 'SOLD OUT';
+  } else if (props.location === 'Online') {
+    badgeText = 'ONLINE';
+  }
+
   return (
     <div className="card">
       <img className="card--image" src={props.coverImg} alt={props.altText} />
-      <span className="card--image-banner">Sold out</span>
+      {badgeText && <div className="card--badge">{badgeText}</div>}
       <div className="card--rating-section">
         <img
           className="card--icon"
